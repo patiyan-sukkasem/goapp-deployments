@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+- name: goapp
+  repo: https://github.com/patiyan-sukkasem/goapp-chart.git
+  releaseName: goapp
+  namespace: goapp-dev
+  valuesFile: values.yaml
+
+components:
+  - "https://github.com/ascendbit/argopilot-deploy-prod.git/components/common-security"

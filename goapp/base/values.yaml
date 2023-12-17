@@ -1,0 +1,10 @@
+# values.yaml
+
+image:
+  repository: pepoolife/goapp
+  tag: latest
+
+service:
+  name: myapp-service
+  type: ClusterIP
+  port: 8080
