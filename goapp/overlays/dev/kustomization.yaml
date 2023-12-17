@@ -4,3 +4,4 @@ namespace: goapp-dev
 
 resources:
   - ../base
+  - ./getsecret.yaml
